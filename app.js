@@ -1,5 +1,5 @@
 const {crearArchivoAsync, crearArchivo,listarTabla} = require('./multiplicar/index')
-const argv=require('./config/yargs'),argv
+const argv=require('./config/yargs').argv
 
 let comando = argv._[0];
 
@@ -15,7 +15,7 @@ switch (comando) {
       })
     break;
   default:
-    console.log('Ordden no reconocida');
+    console.log('Orden no reconocida');
     break;
 }
 
